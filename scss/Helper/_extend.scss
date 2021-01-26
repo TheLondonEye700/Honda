@@ -1,0 +1,13 @@
+%bgImg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    background-clip: content-box;
+}
+
+%icon{
+    border-radius: 50%;
+    color: $color-white-1;
+    text-align: center;
+    cursor: pointer;
+}

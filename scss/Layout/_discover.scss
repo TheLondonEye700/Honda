@@ -1,0 +1,106 @@
+#discover{
+    padding: 0 $pd-8;
+    background-color: $color-grey;
+    .discover-title{
+        text-align: center;
+        color: $color-blue-dark-1;
+        font-weight: 300;
+        margin: $mg-4 - 5 0;
+        h1{
+            font-size: $fs-4 - 0.5;
+        }
+        span{
+            font-size: $fs-1;
+        }
+    }
+
+    .discover-item{
+        @extend %bgImg;
+        height: 450px;
+        position: relative;
+        // display: flex;
+        // align-items: flex-end;
+        box-shadow: $box-shadow-2;
+        margin-top: $mg-1;
+        background-color: $color-white-1;
+        .discover-item-content{
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 5%;
+            // margin-bottom: $mg-1;
+            font-weight: $fw-bold;
+            font-size: $fs-1;
+            h2{
+                font-size: $fs-2;
+                margin-bottom: $mg-2;
+                color: $color-blue-dark-2
+            }
+            p{
+                font-weight: $fw-300;
+                padding: 0 $pd-4;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        &.discover-6{
+            color: $color-blue-2;
+            > i{
+                font-size: $fs-3;
+                position: absolute;
+                top: 1%;
+                right: 2%;
+            }
+
+            .discover-item-twitter{
+                position: absolute;
+                top: 20%;
+                left: 5%;
+                .discover-logo{
+                    img{
+                        border-radius: 0.5rem;
+                        margin-right: $mg-2;
+                        height: 4rem;
+                    }
+                    p{
+                        a{
+                            color: $color-blue-2;
+                            font-size: $fs-1 - 0.1;
+                            &:first-child{
+                                font-weight: $fw-bold;
+                            }
+                        }
+                    }
+                }
+
+                >p{
+                    font-size: $fs-1;
+                    color: $color-blue-dark-2;
+                    line-height: 1.6;
+                    margin-bottom: $mg-2;
+                    &:nth-child(3){
+                        font-size: $fs-html + 1;
+                        color: $color-blue-2;
+                    }
+                }
+                .discover-item-icon{
+                    span{
+                        color: $color-blue-2;
+                        margin-right: $mg-2 - 5;
+                        i{
+                            margin-right: $mg-1 - 2;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    button{
+        margin: $mg-4 0;
+    }
+    
+}

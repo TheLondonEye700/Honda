@@ -1,0 +1,19 @@
+.btn_blue{
+    @include styleButton($color-blue-2, $color-blue-2, $color-white-1, $pd-1 $pd-5 + 5, $color-white-1, $color-blue-2)
+}
+
+.btn_white{
+    @include styleButton($color-blue-2, $color-white-1, $color-blue-2, $pd-1 $pd-5 + 5, $color-blue-2, $color-white-1)
+}
+
+.btn-carousel{
+    @include styleButton($color-red-1, $color-red-1, $color-white-1, $pd-1 $pd-2, $color-white-1, $color-red-1)
+}
+
+.btn_trans{
+    @include styleButton($color-white-1, transparent, $color-white-1, $pd-1 $pd-3, $color-white-1, $color-blue-2)
+}
+
+.btn_blue_trans{
+    @include styleButton($color-blue-2, $color-white-1, $color-blue-2, $pd-1 $pd-2, $color-blue-2, $color-white-1)
+}

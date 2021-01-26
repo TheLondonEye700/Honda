@@ -1,0 +1,77 @@
+@media screen and (max-width: 576px){
+    #header{
+        .search-field{
+            input{
+                width: 73%;
+            }
+        }
+
+    }
+    #our-vehicle{
+        #our-vehicle-slide{
+            .carousel-indicators-xs{
+                ol{
+                    li{
+                        font-size: $fs-html + 1;
+                        padding: $pd-1 + 2 $pd-1;
+                    }
+                }
+            }
+        }
+    }
+
+    #discover{
+        .discover-item{
+            
+            .discover-item-content{
+                
+                font-size: $fs-1;
+                h2{
+                    font-size: $fs-2;
+                    margin-bottom: $mg-2;
+                }
+            }
+            &.discover-6{
+                .discover-item-twitter{
+                    .discover-logo{
+                        p{
+                            a{
+                                font-size: $fs-1;
+                            }
+                        }
+                    }
+
+                    >p{
+                        font-size:  $fs-1;
+                        a{
+                            font-size:  $fs-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #search-footer{
+        .search-footer-content{
+            input{
+                width: 72%;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 395px){
+    #search-footer{
+        .search-footer-content{
+            input{
+                width: 65%;
+            }
+            .btn_blue_trans{
+                padding: $pd-1 $pd-1 + 3;
+            }
+        }
+        
+    }
+}

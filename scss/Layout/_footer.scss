@@ -1,0 +1,106 @@
+#footer{
+    background-color: $color-grey;
+    h2{
+        font-weight: $fw-bold;
+        margin-bottom: $mg-2;
+        color: $color-blue-dark-2;
+        font-size: $fs-2;
+        
+    }
+    .footer-up{
+        padding: $pd-6 $pd-8;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .footer-up-detail{
+            
+            ul{
+                li{
+                    margin-bottom: $mg-1;
+                    a{
+                        font-size: $fs-1;
+                        color: $color-blue-2;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-down{
+        padding: 0 $pd-8 $pd-4 $pd-8;
+        margin: 0 auto;
+        .row{
+            padding-top: $pd-2;
+            .footer-down-social{
+                justify-content: flex-start;
+                margin-top: $mg-2;
+                
+                i{
+                    @extend %icon;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    background-color: $color-blue-2;
+                    font-size: $fs-1 - 0.2;
+                    margin-right: $mg-2 - 5;
+                }
+            }
+
+            .footer-down-contact{
+                justify-content: flex-end;
+                .footer-down-btn{
+                    p{
+                        color: $color-blue-dark-1;
+                        font-size: $fs-1 - 0.1;
+                    }
+                    text-align: end;
+                }
+            }
+            
+        }
+    }
+
+    .footer-copy-right{
+        background-color: $color-blue-1;
+        padding: $pd-3 $pd-8;
+        .footer-copy-right_left{
+            padding-left: 0;
+            p{
+                font-size: $fs-1 - 0.1;
+                color: $color-grey;
+                a{
+                    font-style: italic;
+                    color: $color-grey;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-copy-right_right{
+            padding-right: 0;
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                li{
+                    padding: 0 $pd-1 + 5;
+                    color: $color-grey;
+                    font-size: $fs-1 - 0.1;
+                    border-left: $border-3;
+                    &:first-child{
+                        border-left: none;
+                    }
+                }
+            }
+        }
+
+        .footer-copy-right_img{
+            padding-top: $pd-5;
+            display: flex;
+            justify-content: space-around;
+            img{
+                max-width: 50%;
+                height: 4rem;
+            }
+        }
+    }
+}

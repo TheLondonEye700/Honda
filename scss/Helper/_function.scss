@@ -1,0 +1,39 @@
+@each $stt, $bg-color in (1, #3c4c5c) (2, #5e5e5e) (3, #14409a) (4, #510D1A){ 
+    #img-#{$stt}{   // #img-1
+        background: linear-gradient(#bbbdc0, $color-grey, $color-grey);
+        &:hover{
+            background: linear-gradient($bg-color, $color-grey, $color-grey);
+        }
+    }
+}
+
+@each $stt, $bg-img in (1, banner-1) (2,banner-2) (3, banner-3) (4, banner-4){
+    .slide-#{$stt}{
+        background: url("../../img/#{$bg-img}.jpg");
+        @media screen and (max-width: 768px){
+            background: url("../../img/#{$bg-img}-xs.jpg");
+        }
+    }
+}
+
+@each $stt, $bg-img in (1, slider-1) (2,slider-2) (3, slider-3) (4, slider-4) (5, slider-5){
+    .item-#{$stt}{
+        background: url("../../img/#{$bg-img}.jpg");
+        @media screen and (max-width: 768px){
+            background: url("../../img/#{$bg-img}-xs.jpg");
+        }
+    }
+}
+
+@each $stt, $bg-img in (1, discover-1) (2,discover-2) (3, discover-3) (4, discover-4) (5, discover-5){
+    .discover-#{$stt}{
+        background: url("../../img/#{$bg-img}.jpg");
+    }
+}
+
+@for $i from 1 through 6{
+    .delay-#{$i}{
+        animation-delay: $i * 0.18s;
+    }
+}
+

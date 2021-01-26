@@ -1,0 +1,35 @@
+.carousel-div{
+    margin-top: $mg-5;  // vì header có position: fixed
+    height: 750px;
+    background-color: $color-blue-dark-2;
+    .swiper-container{
+        .swiper-wrapper{
+            height: 93%;    // để pagination không nằm trong ảnh
+            .swiper-slide{
+                height: 100%;
+                @extend %bgImg;
+            }
+        }
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                width: 12px;
+                height: 12px;
+                background-color: $color-blue-1;
+            }
+        }
+        .swiper-button-next, .swiper-button-prev{
+            top: 45%;
+            background-color: $color-white-2;
+            padding: $pd-6 $pd-5;
+            border-radius: 0.9rem;
+        }
+
+        .swiper_btn{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 15%;
+            z-index: 10;
+        }
+    }
+}

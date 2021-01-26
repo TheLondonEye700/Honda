@@ -1,0 +1,105 @@
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $color-blue-1;
+    z-index: 9;
+    .navbar{
+        padding: 0;
+        a{
+            color: $color-white-1;
+            padding: $pd-3 $pd-4;
+            border-right: $border-1;
+            border-left: $border-1;
+            font-size: $fs-1;
+            cursor: pointer;
+            text-decoration: none;
+            &.active{
+                background-color: $color-white-1;
+                color: $color-blue-1;
+            }
+        }
+
+        .navbar-brand{    
+            padding: 0 $pd-4;
+        }
+
+        .no-border{
+            border: 0 !important;
+        }
+
+        .header_right{
+            flex-grow: 1;
+            a, button{
+                margin-left: auto;
+            }
+        }
+
+        .navbar-collapse{
+            flex-grow: unset;
+        }
+
+        .dropdown{
+            .discover-menu{
+                border: none;
+                box-shadow: $box-shadow;
+                left: unset;
+                right: -30%;
+                width: 40rem;
+                padding: $pd-4;
+                &::before{
+                    @include arrow(unset, 15%, $color-white-1);
+                }
+                .dropdown-item{
+                    display: flex;
+                    &:hover{
+                        background-color: transparent;
+                    }
+                    ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        li a{
+                                display: inline-block;
+                                color: $color-blue-2;
+                                border: none;
+                                padding: 0;
+                                font-weight: $fw-bold;
+                                margin-bottom: $mg-1 + 4;
+                                text-decoration: none;
+                            }
+                    }
+                    .dropdown-detail-left{
+                        width: 55%;
+                    }
+                    .dropdown-detail-right{
+                        width: 45%;
+                        padding-left: $pd-3;
+                    }
+
+                    h3{
+                       margin-bottom: $mg-2;
+                       color: $color-blue-dark-2;
+                       font-weight: $fw-bold; 
+                    }
+
+                    &.dropdown-menu-social{
+                        justify-content: space-around;
+                        margin-top: $mg-2;
+                        
+                        i{
+                            @extend %icon;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            background-color: $color-blue-1;
+                            font-size: $fs-1 - 0.1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

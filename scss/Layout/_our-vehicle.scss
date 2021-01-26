@@ -1,0 +1,181 @@
+#our-vehicle{
+    background-color: $color-grey;
+    h1{
+        text-align: center;
+        color: $color-blue-dark-1;
+        font-size: $fs-4 - 0.5;
+        padding: $mg-4 0 $pd-1 0;
+        font-weight: 300;
+    }
+
+    #our-vehicle-slide{
+        height: 600px;
+        .carousel-indicators-config{
+            display: flex;
+            justify-content: space-around;
+            width: 75%;
+            margin: $mg-2 auto;
+            li{
+                color: $color-blue-dark-2;
+                font-size: $fs-1;
+                padding: $pd-1 $pd-2;
+                border-radius: 3.75rem;
+                cursor: pointer;
+                position: relative;
+                &.active{
+                    color: $color-white-1;
+                    background-color: $color-blue-2;
+                    &::before{
+                        content: "";
+                        border-top: 15px solid $color-grey;
+                        border-right: 15px solid transparent;
+                        border-left: 15px solid transparent;
+                        position: absolute;
+                        left: 25%;
+                        top: 56px;
+                        z-index: 8;
+                    }
+                }
+                
+            }
+        }
+
+        .carousel-indicators-xs{
+            display: none;
+        }
+
+        .carousel-inner{
+            height: 100%;
+            .carousel-item{
+                height: 100%;
+                @extend %bgImg;
+            }
+        }
+
+        .carousel_caption{
+            width: 35%;
+            position: absolute;
+            top: 6%;
+            left: 6%;
+            color: $color-white-1;
+            font-size: $fs-1;
+            // z-index: 17;
+            &>p{
+                font-weight: $fw-bold;
+                span{
+                    font-weight: $fw-normal;
+                }
+            }
+            img{
+                width: 65%;
+            }
+
+            .caption_content{
+                font-weight: $fw-300;
+                margin-top: $mg-3;
+            }
+
+            .carousel_caption_number{
+                margin-bottom: $mg-2;
+                .carousel_caption_number_content{
+                    padding: 0;
+                    h2{
+                        font-weight: $fw-300;
+                        font-size: $fs-5;
+                    }
+                    p{
+                        font-weight: $fw-bold;
+                        font-size: $fs-1;
+                    }
+                }
+            }
+
+            .carousel_caption_btn{
+                .btn-carousel, .btn_trans{
+                    padding: $pd-1 $pd-5;
+                    margin-right: $mg-1;
+                }
+            }
+        }
+
+        .carousel_footer{
+            border-top: $border-2;
+            width: 50%;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            a{
+                text-transform: uppercase;
+                font-size: $fs-1 - 0.1;
+                font-weight: $fw-bold;
+                color: white;
+                text-decoration: none;
+                transform: translateY(40%);
+            }
+        }
+    }
+
+    #our-vehicle-grid{
+        margin-top: $mg-6;
+        .row{
+            height: 300px;
+            width: 95%;
+            margin: auto;
+            .vehicle-grid_item{
+                padding: $pd-1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-blue-dark-2;
+                font-size: $fs-1 - 0.1;
+                cursor: pointer;
+                transition: all 0.5s;
+                &:hover{
+                    transform: translateY($mg-2 * -1);
+                }
+
+                .item_content{
+                    height: 300px;
+                    padding: $pd-5;
+                    box-shadow: $box-shadow-2;
+                    background-color: $color-white-1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    i{
+                        font-size: $fs-5 - 0.5;
+                    }
+    
+                    h3{
+                        font-weight: $fw-bold;
+                        margin: $mg-2 0;
+                    }
+                    p{
+                        
+                        margin-bottom: $mg-3;
+                        font-weight: $fw-300;
+                    }
+                    .btn_blue{
+                        padding: $pd-1 $pd-2;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .intro-left-1, .intro-right-1{
+        background-clip: content-box !important;
+        margin-top: $mg-5;
+        @extend %bgImg;
+    }
+    .intro-left-1{
+        background: url("../../img/intro-3.jpg");
+        
+    }
+    .intro-right-1{
+        background: url("../../img/intro-4.jpg");
+    }
+}

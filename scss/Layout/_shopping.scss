@@ -1,0 +1,59 @@
+#shopping-dropdown{
+    // z-index: 1;
+    padding: $pd-3;
+    position: absolute;
+    left: 50px;
+    top: 100%;
+    background-color: $color-white-1;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.044), 0 2.8px 2.4px rgba(0, 0, 0, 0.074), 0 6.6px 8.5px rgba(0, 0, 0, 0.109), 0 22px 43px rgba(0, 0, 0, 0.18);
+    .shopping-up{
+        .shopping-up_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: $pd-3;
+            border-bottom: $border-3;
+            .shopping-up_item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $color-blue-dark-1;
+                height: 145px;
+                width: 158px;
+                padding: $pd-5 $pd-2 $pd-1;
+                i{
+                    font-size: $fs-5;
+                }
+                p{
+                    font-size: $fs-1 - 0.2;
+                    font-weight: $fw-bold;
+                    margin-top: $mg-2;
+                }
+            }
+
+        }
+    }
+
+    .shopping-down{
+        padding: $pd-4 0 $pd-1;
+        .shopping-down_container{
+            .shopping-down_item{
+                padding: $pd-1 $pd-2;
+                text-align: center;
+                padding:0;
+                color: $color-blue-1;
+                a{
+                    font-size: $fs-1 - 0.2;
+                    font-weight: $fw-bold;
+                    text-decoration: none;
+                    color: $color-blue-1;
+                }
+            }
+        }
+    }
+
+    &.hide-shopping{
+        display: none!important;
+    }
+}

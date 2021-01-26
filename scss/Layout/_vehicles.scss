@@ -1,0 +1,157 @@
+#vehicles{
+    background-color: $color-blue-overlay;
+
+    #vehicles_content{
+        width: 85%;
+        margin: auto;
+        position: relative;
+        .vehicle_nav{
+            background-color: $color-white-1;
+            text-align: center;
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: $pd-1 + 1 0;
+                li{
+                    display: inline;
+                    a{
+                        padding: $pd-1 $pd-4;
+                        display: inline-block;
+                        font-weight: $fw-bold;
+                        color: $color-blue-dark-2;
+                        border-right: $border-2;
+                        font-size: $fs-1;
+                        &:hover, &.active{
+                            color: $color-blue-2;
+                            
+                            text-decoration: none;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+        #vehicle_list{
+            background-color: $color-grey;
+            padding: $pd-6;
+            max-height: 90vh;
+            .vehicles_title{
+                h1{
+                    position: relative;
+                    top: -2.7rem;
+                    padding: 0 $pd-1;
+                    color: $color-blue-dark-2;
+                    background-color: $color-grey;
+                    font-weight: $fw-bold;
+                    font-size: $fs-3;
+                    span{
+                        font-weight: $fw-normal;
+                    }
+                    i{
+                        font-size: $fs-3 * 0.5;
+                        position: relative;
+                        top: 0.5px;
+                    }
+                }
+            }
+            .vehicle_product{
+                color: $color-blue-dark-2;
+                margin-bottom: $mg-3 + 5;
+                .vehicle_img{
+                    img:last-child{
+                        display: none;
+                    }
+                }
+
+                h2{
+                    font-size: $fs-2;
+                    font-weight: $fw-bold;
+                    margin-bottom: $mg-1;
+                }
+
+                .vehicle_info{
+                    margin-bottom: $mg-2;
+                    h4{
+                        font-weight: $fw-normal;
+                        font-size: $fs-3;
+                        &:last-of-type{
+                            text-align: right;
+                        }
+                    }
+                    p{
+                        font-size: $fs-1;
+                        margin-bottom: $mg-1;
+                    }
+                }
+                .vehicle_button{
+                    .btn_blue{
+                        margin-right: $mg-1;
+                        padding: $pd-1 $pd-4 - 1;
+                        margin-bottom: $mg-1;
+                    }
+                }
+
+                &:hover{
+                    .vehicle_img{
+                        img:last-child{
+                            display: block;
+                        }
+                        img:first-child{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        #vehicle_close{
+            position: absolute;
+            left: 98.1%;
+            z-index: 99;
+            background-color: $color-grey;
+            width: 70px;
+            padding: $pd-2 0;
+            text-align: center;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            cursor: pointer;
+            &:hover{
+                .vehicle_circle{
+                    border-color: $color-blue-dark-1;
+                    i{
+                        color: $color-blue-dark-1;
+                    }
+                }
+                p{
+                    color: $color-blue-dark-1;
+                }
+            }
+            
+            .vehicle_circle{
+                width: 25px;
+                height: 25px;
+                border: 2px solid $color-blue-1;
+                border-radius: 50%;
+                text-align: center;
+                margin: auto;
+                line-height: 25px;
+                i{
+                    color: $color-blue-1;
+                    font-size: $fs-1;
+                }
+            }
+            p{
+                font-size: $fs-1;
+                color: $color-blue-1;
+                font-weight: $fw-bold;
+            }
+        }
+
+    }
+
+    &.hide-vehicle{
+        display: none;
+    }
+
+}

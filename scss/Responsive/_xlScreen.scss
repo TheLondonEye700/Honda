@@ -1,0 +1,59 @@
+@media screen and (max-width: 1480px){
+    #discover{
+        .discover-item{
+            
+            .discover-item-content{
+                font-size: $fs-1 - 0.2;
+                h2{
+                    font-size: $fs-1 + 0.1;
+                    margin-bottom: $mg-1;
+                }
+            }
+            &.discover-6{
+                .discover-item-twitter{
+                    .discover-logo{
+                        p{
+                            a{
+                                font-size: $fs-1 - 0.2;
+                            }
+                        }
+                    }
+                    >p{
+                        font-size:  $fs-1 - 0.2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 992px) and (max-width: 1200px){
+    #our-vehicle{
+        #our-vehicle-grid{
+            .row{
+                height: 320px;
+                .vehicle-grid_item{
+                    .item_content{
+                        padding: $pd-3;
+                        font-size: $fs-html + 1;
+                        
+                        i{
+                            font-size: $fs-3;
+                        }
+                        p{
+                            
+                            margin-bottom: $mg-2;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    #search-footer{
+        .search-footer-content{
+            width: 85%;
+        }
+    }
+}

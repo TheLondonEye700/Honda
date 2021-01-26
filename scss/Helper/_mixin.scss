@@ -1,0 +1,25 @@
+@mixin styleButton($border-color, $bg-color, $color, $pd, $bg-hover, $color-hover) {
+    border: 2px solid $border-color;
+    border-radius: 40px;
+    background-color: $bg-color;
+    color: $color;
+    padding: $pd;
+    font-weight: $fw-bold;
+    font-size: $fs-1 - 0.2;
+    &:hover{
+        color: $color-hover;
+        background-color: $bg-hover;
+        border: 2px solid $border-color;
+    }
+}
+
+@mixin arrow($left, $right, $bg-color){
+    content: "";
+    border-bottom: 15px solid $bg-color;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: $left;
+    right: $right;
+}
