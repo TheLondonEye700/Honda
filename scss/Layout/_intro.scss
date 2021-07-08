@@ -1,63 +1,60 @@
-.intro{
+.intro {
     background-color: $color-grey;
-    .intro_container{
+    .intro_container {
         width: 95%;
         margin: 0 auto;
-        .intro_left, .intro_right{
-            margin-top: $mg-up-3;   // để đè lên div trên
+        .intro_left,
+        .intro_right {
+            margin-top: $mg-up-3; // negative margin -> move up
             position: relative;
             height: 350px;
             @extend %bgImg;
-            h4{
+            h4 {
                 font-weight: $fw-bold;
                 margin-bottom: $mg-2 - 2;
             }
-            
-            p{
+            p {
                 font-weight: $fw-300;
                 margin-bottom: $mg-2;
             }
         }
-        .intro_left{
-            background-image: url("../../img/our-vehicle-intro-1.jpg");
-            .intro_left_content{
+        .intro_left {
+            background-image: url("../img/our-vehicle-intro-1.jpg");
+            .intro_left_content {
                 color: $color-white-1;
                 padding: 0 $pd-5 + 5;
                 position: absolute;
                 bottom: 6%;
                 font-size: $fs-1;
-
-                button{
+                button {
                     padding: $pd-1 $pd-2;
-                    &:hover{
+                    &:hover {
                         background-color: transparent;
                     }
                 }
             }
         }
-
-        .intro_right{
-            background-image: url("../../img/our-vehicles-intro-2.jpg");
-            .intro_right_content{
+        .intro_right {
+            background-image: url("../img/our-vehicles-intro-2.jpg");
+            .intro_right_content {
                 color: $color-white-1;
                 padding: 0 $pd-2;
                 position: absolute;
                 left: 5%;
                 top: 25%;
                 font-size: $fs-2;
-                h4{
+                h4 {
                     padding: $pd-1 $pd-2;
                     display: inline-block;
                     background: $color-blue-overlay;
                 }
-                p{
+                p {
                     font-weight: $fw-bold;
-                    font-size: $fs-1 ;
+                    font-size: $fs-1;
                     display: inline-block;
                     padding-right: 55%;
                 }
             }
         }
-        
     }
 }

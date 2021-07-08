@@ -1,31 +1,30 @@
-#our-vehicle{
+#our-vehicle {
     background-color: $color-grey;
-    h1{
+    h1 {
         text-align: center;
         color: $color-blue-dark-1;
         font-size: $fs-4 - 0.5;
         padding: $mg-4 0 $pd-1 0;
         font-weight: 300;
     }
-
-    #our-vehicle-slide{
+    #our-vehicle-slide {
         height: 600px;
-        .carousel-indicators-config{
+        .carousel-indicators-config {
             display: flex;
             justify-content: space-around;
             width: 75%;
             margin: $mg-2 auto;
-            li{
+            li {
                 color: $color-blue-dark-2;
                 font-size: $fs-1;
                 padding: $pd-1 $pd-2;
                 border-radius: 3.75rem;
                 cursor: pointer;
                 position: relative;
-                &.active{
+                &.active {
                     color: $color-white-1;
                     background-color: $color-blue-2;
-                    &::before{
+                    &::before {
                         content: "";
                         border-top: 15px solid $color-grey;
                         border-right: 15px solid transparent;
@@ -36,23 +35,19 @@
                         z-index: 8;
                     }
                 }
-                
             }
         }
-
-        .carousel-indicators-xs{
+        .carousel-indicators-xs {
             display: none;
         }
-
-        .carousel-inner{
+        .carousel-inner {
             height: 100%;
-            .carousel-item{
+            .carousel-item {
                 height: 100%;
                 @extend %bgImg;
             }
         }
-
-        .carousel_caption{
+        .carousel_caption {
             width: 35%;
             position: absolute;
             top: 6%;
@@ -60,51 +55,48 @@
             color: $color-white-1;
             font-size: $fs-1;
             // z-index: 17;
-            &>p{
+            &>p {
                 font-weight: $fw-bold;
-                span{
+                span {
                     font-weight: $fw-normal;
                 }
             }
-            img{
+            img {
                 width: 65%;
             }
-
-            .caption_content{
+            .caption_content {
                 font-weight: $fw-300;
                 margin-top: $mg-3;
             }
-
-            .carousel_caption_number{
+            .carousel_caption_number {
                 margin-bottom: $mg-2;
-                .carousel_caption_number_content{
+                .carousel_caption_number_content {
                     padding: 0;
-                    h2{
+                    h2 {
                         font-weight: $fw-300;
                         font-size: $fs-5;
                     }
-                    p{
+                    p {
                         font-weight: $fw-bold;
                         font-size: $fs-1;
                     }
                 }
             }
-
-            .carousel_caption_btn{
-                .btn-carousel, .btn_trans{
+            .carousel_caption_btn {
+                .btn-carousel,
+                .btn_trans {
                     padding: $pd-1 $pd-5;
                     margin-right: $mg-1;
                 }
             }
         }
-
-        .carousel_footer{
+        .carousel_footer {
             border-top: $border-2;
             width: 50%;
             position: absolute;
             bottom: 2%;
             left: 0;
-            a{
+            a {
                 text-transform: uppercase;
                 font-size: $fs-1 - 0.1;
                 font-weight: $fw-bold;
@@ -114,14 +106,13 @@
             }
         }
     }
-
-    #our-vehicle-grid{
+    #our-vehicle-grid {
         margin-top: $mg-6;
-        .row{
+        .row {
             height: 300px;
             width: 95%;
             margin: auto;
-            .vehicle-grid_item{
+            .vehicle-grid_item {
                 padding: $pd-1;
                 display: flex;
                 justify-content: center;
@@ -130,11 +121,10 @@
                 font-size: $fs-1 - 0.1;
                 cursor: pointer;
                 transition: all 0.5s;
-                &:hover{
+                &:hover {
                     transform: translateY($mg-2 * -1);
                 }
-
-                .item_content{
+                .item_content {
                     height: 300px;
                     padding: $pd-5;
                     box-shadow: $box-shadow-2;
@@ -144,38 +134,34 @@
                     justify-content: center;
                     align-items: center;
                     text-align: center;
-                    i{
+                    i {
                         font-size: $fs-5 - 0.5;
                     }
-    
-                    h3{
+                    h3 {
                         font-weight: $fw-bold;
                         margin: $mg-2 0;
                     }
-                    p{
-                        
+                    p {
                         margin-bottom: $mg-3;
                         font-weight: $fw-300;
                     }
-                    .btn_blue{
+                    .btn_blue {
                         padding: $pd-1 $pd-2;
                     }
                 }
-                
             }
         }
     }
-
-    .intro-left-1, .intro-right-1{
+    .intro-left-1,
+    .intro-right-1 {
         background-clip: content-box !important;
         margin-top: $mg-5;
         @extend %bgImg;
     }
-    .intro-left-1{
-        background: url("../../img/intro-3.jpg");
-        
+    .intro-left-1 {
+        background: url("../img/intro-3.jpg");
     }
-    .intro-right-1{
-        background: url("../../img/intro-4.jpg");
+    .intro-right-1 {
+        background: url("../img/intro-4.jpg");
     }
 }

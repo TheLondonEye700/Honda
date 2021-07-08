@@ -1,329 +1,284 @@
-@media screen and (max-width: 992px){
-    #header{
-        .navbar{
-            a{
+@media screen and (max-width: 992px) {
+    #header {
+        .navbar {
+            a {
                 padding: $pd-2 $pd-2;
                 font-size: $fs-html + 2;
             }
-            .navbar-brand{
+            .navbar-brand {
                 padding: 0 $pd-2;
             }
         }
-
-        #vehicles{
-            #vehicles_content{
+        #vehicles {
+            #vehicles_content {
                 width: 90%;
-                .vehicle_nav{
-                    ul{
-                        li{
-                            a{
+                .vehicle_nav {
+                    ul {
+                        li {
+                            a {
                                 padding: $pd-1 $pd-2;
                                 font-size: $fs-1 - 0.2;
                             }
                         }
                     }
                 }
-        
             }
-        
         }
-
-        #shopping-dropdown{
+        #shopping-dropdown {
             padding: $pd-2;
-                left: 30px;
-                .shopping-up{
-                    .shopping-up_container{
-                        padding-bottom: $pd-1;
-                        .shopping-up_item{
-                            height: 116px;
-                            width: 126px;
-                            padding: $pd-1;
-                            i{
-                                font-size: $fs-5 - 0.6;
-                            }
-                            p{
-                                font-size: $fs-1 - 0.3;
-                            }
+            left: 30px;
+            .shopping-up {
+                .shopping-up_container {
+                    padding-bottom: $pd-1;
+                    .shopping-up_item {
+                        height: 116px;
+                        width: 126px;
+                        padding: $pd-1;
+                        i {
+                            font-size: $fs-5 - 0.6;
                         }
-            
-                    }
-                }
-            
-                .shopping-down{
-                    padding-top: $pd-2;
-                    .shopping-down_container{
-                        .shopping-down_item{
-                            padding: $pd-1;
-                            a{
-                                font-size: $fs-1 - 0.3;
-                            }
+                        p {
+                            font-size: $fs-1 - 0.3;
                         }
                     }
                 }
             }
-        
-
-        .search-field{
-            &.collapse{
+            .shopping-down {
+                padding-top: $pd-2;
+                .shopping-down_container {
+                    .shopping-down_item {
+                        padding: $pd-1;
+                        a {
+                            font-size: $fs-1 - 0.3;
+                        }
+                    }
+                }
+            }
+        }
+        .search-field {
+            &.collapse {
                 display: none;
             }
-
             background-color: $color-blue-1;
             padding: $pd-1;
-            i{
+            i {
                 color: $color-white-1;
                 font-size: $fs-html;
             }
-            input{
+            input {
                 width: 79%;
                 height: 2rem;
-                font-size:  $fs-1;
+                font-size: $fs-1;
                 color: $color-white-1;
-                &::placeholder{
-                    font-size:  $fs-1;
+                &::placeholder {
+                    font-size: $fs-1;
                     color: $color-white-1;
                 }
             }
-            button{
+            button {
                 margin-top: - ($mg-1 + 5);
                 background-color: transparent;
                 font-size: $fs-html;
             }
-            &::before{
+            &::before {
                 border-bottom: none;
             }
-
         }
-
-       
     }
-
-    .carousel-div{
-        margin-top: $mg-4; 
+    .carousel-div {
+        margin-top: $mg-4;
         height: 600px;
         background-color: $color-blue-dark-2;
-        .swiper-container{
+        .swiper-container {
             height: 410px;
-            .swiper-wrapper{
+            .swiper-wrapper {
                 height: 88%;
             }
-            .swiper-button-next, .swiper-button-prev{
+            .swiper-button-next,
+            .swiper-button-prev {
                 padding: $pd-6 - 5 $pd-4;
             }
         }
     }
-
-    .intro{
-        .intro_container{
-            .intro_right{
-                background-image: url("../../img/intro-2-xs.jpg");
-                .intro_right_content{
-                    p{
+    .intro {
+        .intro_container {
+            .intro_right {
+                background-image: url("../img/intro-2-xs.jpg");
+                .intro_right_content {
+                    p {
                         padding-right: 15%;
                     }
-    
                 }
             }
         }
     }
-
-    #our-vehicle{  
-        #our-vehicle-slide{
-            .carousel-inner{
+    #our-vehicle {
+        #our-vehicle-slide {
+            .carousel-inner {
                 height: 80%;
             }
-            .carousel-indicators-config{
+            .carousel-indicators-config {
                 width: 80%;
-                li{
+                li {
                     font-size: $fs-1 - 0.2;
-                    &.active{
-                        &::before{
+                    &.active {
+                        &::before {
                             top: 50px;
                         }
                     }
                 }
             }
-
-
-            .carousel_caption{
-                .caption_content{
+            .carousel_caption {
+                .caption_content {
                     margin-top: $mg-1;
                     font-size: $fs-html + 2;
                 }
-
-                .carousel_caption_number{
-                    .carousel_caption_number_content{
-                        h2{
+                .carousel_caption_number {
+                    .carousel_caption_number_content {
+                        h2 {
                             font-size: $fs-3 + 0.2;
                         }
-                        p{
+                        p {
                             font-size: $fs-html + 2;
                         }
                     }
                 }
             }
-
-            .carousel_footer{
+            .carousel_footer {
                 width: 100%;
             }
         }
-
-        #our-vehicle-grid{
+        #our-vehicle-grid {
             margin-top: $mg-2;
-            .row{
+            .row {
                 height: 600px;
             }
         }
     }
-
-    #discover{
-        .discover-item{
+    #discover {
+        .discover-item {
             height: 500px;
-            .discover-item-content{
+            .discover-item-content {
                 font-size: $fs-html + 1;
-                h2{
+                h2 {
                     font-size: $fs-1;
                 }
             }
-            &.discover-6{
-                .discover-item-twitter{
-                    
-                    >p{
+            &.discover-6 {
+                .discover-item-twitter {
+                    >p {
                         font-size: $fs-html + 1;
-                        a{
+                        a {
                             font-size: $fs-html - 1;
                         }
                     }
                 }
             }
         }
-        
     }
-
-    #search-footer{
-        .search-footer-content{
+    #search-footer {
+        .search-footer-content {
             width: 80%;
-            input{
+            input {
                 width: 80%;
             }
         }
     }
-
-    #footer{
-        .footer-copy-right{
+    #footer {
+        .footer-copy-right {
             padding: $pd-2 $pd-8 - 2%;
-            .footer-copy-right_left{
-                p{
+            .footer-copy-right_left {
+                p {
                     font-size: $fs-1 - 0.3;
                 }
             }
-    
-            .footer-copy-right_right{
+            .footer-copy-right_right {
                 padding-right: 0;
-                ul{
-                    li{
+                ul {
+                    li {
                         padding: 0 $pd-1 + 2;
                         font-size: $fs-1 - 0.3;
                         border-left: $border-3;
                     }
                 }
             }
-
-            .footer-copy-right_img{
+            .footer-copy-right_img {
                 flex-wrap: wrap;
-                img{
+                img {
                     margin: $mg-1 + 5 $mg-1;
                     height: 3rem;
                 }
             }
         }
     }
-
 }
 
-@media screen and(min-width: 768px) and (max-width: 980px){
-    #header{
-        #vehicles{
-            #vehicles_content{
-                #vehicle_list{
+@media screen and(min-width: 768px) and (max-width: 980px) {
+    #header {
+        #vehicles {
+            #vehicles_content {
+                #vehicle_list {
                     padding: $pd-6 - 5 $pd-5 + 5;
-                    .vehicle_product{
-        
-                        .vehicle_info{
-                            h4{
+                    .vehicle_product {
+                        .vehicle_info {
+                            h4 {
                                 font-size: $fs-2 + 0.1;
                             }
-                            p{
+                            p {
                                 font-size: $fs-1 - 0.2;
                             }
                         }
-                        .vehicle_button{
-                            .btn_blue{
+                        .vehicle_button {
+                            .btn_blue {
                                 margin-right: 0;
                             }
                         }
                     }
                 }
-        
             }
-        
         }
     }
-
-    #footer{
-        h2{
+    #footer {
+        h2 {
             font-size: $fs-1 + 0.1;
-            
         }
-        .footer-up{
+        .footer-up {
             padding: $pd-6 $pd-8 - 2%;
-            .footer-up-detail{
-                
-                ul{
-                    li{
-                        a{
+            .footer-up-detail {
+                ul {
+                    li {
+                        a {
                             font-size: $fs-html + 2;
                         }
                     }
                 }
             }
         }
-
-        .footer-down{
+        .footer-down {
             padding: $pd-2 $pd-8 - 2%;
-            .row{
-                .footer-down-social{
-                    i{
+            .row {
+                .footer-down-social {
+                    i {
                         margin-right: $mg-1 + 1;
                     }
                 }
-    
-                
-                
             }
         }
-
-        
     }
-
-    #vehicles{
-        #vehicles_content{
-            #vehicle_list{
-                .vehicle_product{
-    
-                    .vehicle_info{
-                        h4{
+    #vehicles {
+        #vehicles_content {
+            #vehicle_list {
+                .vehicle_product {
+                    .vehicle_info {
+                        h4 {
                             font-size: $fs-2;
                         }
                     }
                 }
             }
-
-            #vehicle_close{
+            #vehicle_close {
                 left: 96.5%;
             }
-    
         }
-    
     }
 }

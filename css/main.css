@@ -31,113 +31,113 @@
 }
 
 .slide-1 {
-  background: url("../../img/banner-1.jpg");
+  background: url("../img/banner-1.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .slide-1 {
-    background: url("../../img/banner-1-xs.jpg");
+    background: url("../img/banner-1-xs.jpg");
   }
 }
 
 .slide-2 {
-  background: url("../../img/banner-2.jpg");
+  background: url("../img/banner-2.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .slide-2 {
-    background: url("../../img/banner-2-xs.jpg");
+    background: url("../img/banner-2-xs.jpg");
   }
 }
 
 .slide-3 {
-  background: url("../../img/banner-3.jpg");
+  background: url("../img/banner-3.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .slide-3 {
-    background: url("../../img/banner-3-xs.jpg");
+    background: url("../img/banner-3-xs.jpg");
   }
 }
 
 .slide-4 {
-  background: url("../../img/banner-4.jpg");
+  background: url("../img/banner-4.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .slide-4 {
-    background: url("../../img/banner-4-xs.jpg");
+    background: url("../img/banner-4-xs.jpg");
   }
 }
 
 .item-1 {
-  background: url("../../img/slider-1.jpg");
+  background: url("../img/slider-1.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .item-1 {
-    background: url("../../img/slider-1-xs.jpg");
+    background: url("../img/slider-1-xs.jpg");
   }
 }
 
 .item-2 {
-  background: url("../../img/slider-2.jpg");
+  background: url("../img/slider-2.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .item-2 {
-    background: url("../../img/slider-2-xs.jpg");
+    background: url("../img/slider-2-xs.jpg");
   }
 }
 
 .item-3 {
-  background: url("../../img/slider-3.jpg");
+  background: url("../img/slider-3.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .item-3 {
-    background: url("../../img/slider-3-xs.jpg");
+    background: url("../img/slider-3-xs.jpg");
   }
 }
 
 .item-4 {
-  background: url("../../img/slider-4.jpg");
+  background: url("../img/slider-4.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .item-4 {
-    background: url("../../img/slider-4-xs.jpg");
+    background: url("../img/slider-4-xs.jpg");
   }
 }
 
 .item-5 {
-  background: url("../../img/slider-5.jpg");
+  background: url("../img/slider-5.jpg");
 }
 
 @media screen and (max-width: 768px) {
   .item-5 {
-    background: url("../../img/slider-5-xs.jpg");
+    background: url("../img/slider-5-xs.jpg");
   }
 }
 
 .discover-1 {
-  background: url("../../img/discover-1.jpg");
+  background: url("../img/discover-1.jpg");
 }
 
 .discover-2 {
-  background: url("../../img/discover-2.jpg");
+  background: url("../img/discover-2.jpg");
 }
 
 .discover-3 {
-  background: url("../../img/discover-3.jpg");
+  background: url("../img/discover-3.jpg");
 }
 
 .discover-4 {
-  background: url("../../img/discover-4.jpg");
+  background: url("../img/discover-4.jpg");
 }
 
 .discover-5 {
-  background: url("../../img/discover-5.jpg");
+  background: url("../img/discover-5.jpg");
 }
 
 .delay-1 {
@@ -164,7 +164,9 @@
   animation-delay: 1.08s;
 }
 
-.carousel-div .swiper-container .swiper-wrapper .swiper-slide, .intro .intro_container .intro_left, .intro .intro_container .intro_right, #our-vehicle #our-vehicle-slide .carousel-inner .carousel-item, #our-vehicle .intro-left-1, #our-vehicle .intro-right-1, #discover .discover-item {
+.carousel-div .swiper-container .swiper-wrapper .swiper-slide, .intro .intro_container .intro_left,
+.intro .intro_container .intro_right, #our-vehicle #our-vehicle-slide .carousel-inner .carousel-item, #our-vehicle .intro-left-1,
+#our-vehicle .intro-right-1, #discover .discover-item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0;
@@ -709,7 +711,8 @@ body, html {
   background-color: #007cc3;
 }
 
-.carousel-div .swiper-container .swiper-button-next, .carousel-div .swiper-container .swiper-button-prev {
+.carousel-div .swiper-container .swiper-button-next,
+.carousel-div .swiper-container .swiper-button-prev {
   top: 45%;
   background-color: #ffffffe6;
   padding: 50px 30px;
@@ -733,24 +736,27 @@ body, html {
   margin: 0 auto;
 }
 
-.intro .intro_container .intro_left, .intro .intro_container .intro_right {
+.intro .intro_container .intro_left,
+.intro .intro_container .intro_right {
   margin-top: -200px;
   position: relative;
   height: 350px;
 }
 
-.intro .intro_container .intro_left h4, .intro .intro_container .intro_right h4 {
+.intro .intro_container .intro_left h4,
+.intro .intro_container .intro_right h4 {
   font-weight: bold;
   margin-bottom: 18px;
 }
 
-.intro .intro_container .intro_left p, .intro .intro_container .intro_right p {
+.intro .intro_container .intro_left p,
+.intro .intro_container .intro_right p {
   font-weight: 300;
   margin-bottom: 20px;
 }
 
 .intro .intro_container .intro_left {
-  background-image: url("../../img/our-vehicle-intro-1.jpg");
+  background-image: url("../img/our-vehicle-intro-1.jpg");
 }
 
 .intro .intro_container .intro_left .intro_left_content {
@@ -770,7 +776,7 @@ body, html {
 }
 
 .intro .intro_container .intro_right {
-  background-image: url("../../img/our-vehicles-intro-2.jpg");
+  background-image: url("../img/our-vehicles-intro-2.jpg");
 }
 
 .intro .intro_container .intro_right .intro_right_content {
@@ -899,7 +905,8 @@ body, html {
   font-size: 1.4rem;
 }
 
-#our-vehicle #our-vehicle-slide .carousel_caption .carousel_caption_btn .btn-carousel, #our-vehicle #our-vehicle-slide .carousel_caption .carousel_caption_btn .btn_trans {
+#our-vehicle #our-vehicle-slide .carousel_caption .carousel_caption_btn .btn-carousel,
+#our-vehicle #our-vehicle-slide .carousel_caption .carousel_caption_btn .btn_trans {
   padding: 6px 30px;
   margin-right: 5px;
 }
@@ -976,17 +983,18 @@ body, html {
   padding: 6px 15px;
 }
 
-#our-vehicle .intro-left-1, #our-vehicle .intro-right-1 {
+#our-vehicle .intro-left-1,
+#our-vehicle .intro-right-1 {
   background-clip: content-box !important;
   margin-top: 60px;
 }
 
 #our-vehicle .intro-left-1 {
-  background: url("../../img/intro-3.jpg");
+  background: url("../img/intro-3.jpg");
 }
 
 #our-vehicle .intro-right-1 {
-  background: url("../../img/intro-4.jpg");
+  background: url("../img/intro-4.jpg");
 }
 
 #discover {
@@ -1329,11 +1337,12 @@ body, html {
   .carousel-div .swiper-container .swiper-wrapper {
     height: 88%;
   }
-  .carousel-div .swiper-container .swiper-button-next, .carousel-div .swiper-container .swiper-button-prev {
+  .carousel-div .swiper-container .swiper-button-next,
+  .carousel-div .swiper-container .swiper-button-prev {
     padding: 45px 25px;
   }
   .intro .intro_container .intro_right {
-    background-image: url("../../img/intro-2-xs.jpg");
+    background-image: url("../img/intro-2-xs.jpg");
   }
   .intro .intro_container .intro_right .intro_right_content p {
     padding-right: 15%;
@@ -1449,7 +1458,7 @@ body, html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #header .navbar .navbar-collapse {
     border-top: 0.15rem solid #eaeaea;
   }
@@ -1490,7 +1499,8 @@ body, html {
     background-position: top center;
   }
   .intro .intro_container .intro_right {
-    background-image: url("../../img/our-vehicles-intro-2.jpg");
+    background-image: url("../img/our-vehicles-intro-2.jpg");
+    margin-top: 5px;
   }
   .intro .intro_container .intro_right .intro_right_content p {
     padding-right: 55%;
@@ -1624,6 +1634,9 @@ body, html {
   #header .search-field button {
     padding: 6px 29px;
   }
+  #our-vehicle h1 {
+    font-size: 4.5rem;
+  }
   #our-vehicle #our-vehicle-slide {
     position: relative;
   }
@@ -1637,7 +1650,7 @@ body, html {
     border: 1px solid #eaeaea;
     background-color: #fff;
     position: absolute;
-    top: -10%;
+    top: -3%;
     left: 20%;
     z-index: 8;
   }
@@ -1646,7 +1659,7 @@ body, html {
     margin: 5px;
     color: #007cc3;
     font-weight: 300;
-    padding: 11px;
+    padding: 6px;
     cursor: pointer;
   }
   #our-vehicle #our-vehicle-slide .carousel-indicators-xs h1 span {
@@ -1671,6 +1684,9 @@ body, html {
     padding: 15px 6px;
     cursor: pointer;
     text-align: center;
+  }
+  #discover .discover-title h1 {
+    font-size: 4.5rem;
   }
   #search-footer {
     padding: 6px;
